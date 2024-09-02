@@ -35,7 +35,29 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
 
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -805,35 +827,12 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+            <object class="pdf" 
+            data=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+            width="800"
+            height="500">
+    </object>
           </div><!-- End Contact Form -->
 
         </div>
